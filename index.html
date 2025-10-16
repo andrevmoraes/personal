@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zune Treinos — Metro (Windows Phone 8.1)</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="appbar" aria-label="Barra superior">
+      <div class="brand">
+        <div class="brand-title">Zune Treinos</div>
+        <div class="brand-sub">Windows Phone 8.1 style</div>
+      </div>
+      <div class="theme-switch">
+        <label for="themeToggle">Tema</label>
+        <input id="themeToggle" class="toggle" type="checkbox" aria-label="Alternar tema claro/escuro" />
+      </div>
+    </header>
+
+    <main>
+      <section class="pivots" aria-label="Seleção de treinos">
+        <input id="tabA" class="pivot-input" type="radio" name="pivot" checked />
+        <input id="tabB" class="pivot-input" type="radio" name="pivot" />
+        <input id="tabC" class="pivot-input" type="radio" name="pivot" />
+        <input id="tabD" class="pivot-input" type="radio" name="pivot" />
+
+        <nav class="pivot-tabs" aria-label="Abas de treino">
+          <label class="pivot-tab" for="tabA" role="button" aria-controls="panelA">Costas</label>
+          <label class="pivot-tab" for="tabB" role="button" aria-controls="panelB">Ombros</label>
+          <label class="pivot-tab" for="tabC" role="button" aria-controls="panelC">Peito</label>
+          <label class="pivot-tab" for="tabD" role="button" aria-controls="panelD">Pernas</label>
+        </nav>
+
+        <div class="pivot-panels">
+          <section id="panelA" aria-label="Treino A - Costas">
+            <h2 class="section-title">Foco principal em puxadas e tríceps</h2>
+            <div class="tiles">
+              <!-- PUXADA MÁQUINA PEGADA PRONADA -->
+              <article class="tile">
+                <header class="ex-title">PUXADA MÁQUINA PEGADA PRONADA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x10</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 10 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/6rxOh10Iukc?si=49oiYovL-9p3Kl_c" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Puxada Máquina Pegada Pronada">
+                  <div class="sets">
+                    <input id="puxada-s1" class="set-input" type="checkbox" name="puxada" />
+                    <label for="puxada-s1" class="set-label">1</label>
+                    <input id="puxada-s2" class="set-input" type="checkbox" name="puxada" />
+                    <label for="puxada-s2" class="set-label">2</label>
+                    <input id="puxada-s3" class="set-input" type="checkbox" name="puxada" />
+                    <label for="puxada-s3" class="set-label">3</label>
+                    <input id="puxada-s4" class="set-input" type="checkbox" name="puxada" />
+                    <label for="puxada-s4" class="set-label">4</label>
+                    <input id="puxada-s5" class="set-input" type="checkbox" name="puxada" />
+                    <label for="puxada-s5" class="set-label">5</label>
+                    <input id="puxada-s6" class="set-input" type="checkbox" name="puxada" />
+                    <label for="puxada-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- REMADA MÁQUINA PEGADA SUPINADA -->
+              <article class="tile">
+                <header class="ex-title">REMADA MÁQUINA PEGADA SUPINADA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x10</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 10 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/M8HNHkdDMjY?si=aLhq10OSCL60aGwn" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Remada Máquina Pegada Supinada">
+                  <div class="sets">
+                    <input id="remada-s1" class="set-input" type="checkbox" name="remada" />
+                    <label for="remada-s1" class="set-label">1</label>
+                    <input id="remada-s2" class="set-input" type="checkbox" name="remada" />
+                    <label for="remada-s2" class="set-label">2</label>
+                    <input id="remada-s3" class="set-input" type="checkbox" name="remada" />
+                    <label for="remada-s3" class="set-label">3</label>
+                    <input id="remada-s4" class="set-input" type="checkbox" name="remada" />
+                    <label for="remada-s4" class="set-label">4</label>
+                    <input id="remada-s5" class="set-input" type="checkbox" name="remada" />
+                    <label for="remada-s5" class="set-label">5</label>
+                    <input id="remada-s6" class="set-input" type="checkbox" name="remada" />
+                    <label for="remada-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- PUXADA MÁQUINA PEGADA NEUTRA -->
+              <article class="tile">
+                <header class="ex-title">PUXADA MÁQUINA PEGADA NEUTRA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x10</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 10 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/KblYMAmYKx0?si=4DHc1A_v81yjS_Tg" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Puxada Máquina Pegada Neutra">
+                  <div class="sets">
+                    <input id="neutra-s1" class="set-input" type="checkbox" name="neutra" />
+                    <label for="neutra-s1" class="set-label">1</label>
+                    <input id="neutra-s2" class="set-input" type="checkbox" name="neutra" />
+                    <label for="neutra-s2" class="set-label">2</label>
+                    <input id="neutra-s3" class="set-input" type="checkbox" name="neutra" />
+                    <label for="neutra-s3" class="set-label">3</label>
+                    <input id="neutra-s4" class="set-input" type="checkbox" name="neutra" />
+                    <label for="neutra-s4" class="set-label">4</label>
+                    <input id="neutra-s5" class="set-input" type="checkbox" name="neutra" />
+                    <label for="neutra-s5" class="set-label">5</label>
+                    <input id="neutra-s6" class="set-input" type="checkbox" name="neutra" />
+                    <label for="neutra-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- TRÍCEPS POLIA PEGADA PRONADA -->
+              <article class="tile">
+                <header class="ex-title">TRÍCEPS POLIA PEGADA PRONADA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x12</div>
+                  <div><strong>Descanso:</strong> 1'</div>
+                </div>
+                <p class="obs">Manter os cotovelos em posição fixa</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/Ckab-LPz8SA?si=NYq2Od8To8khRP4T" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Tríceps Polia Pegada Pronada">
+                  <div class="sets">
+                    <input id="triceps-s1" class="set-input" type="checkbox" name="triceps" />
+                    <label for="triceps-s1" class="set-label">1</label>
+                    <input id="triceps-s2" class="set-input" type="checkbox" name="triceps" />
+                    <label for="triceps-s2" class="set-label">2</label>
+                    <input id="triceps-s3" class="set-input" type="checkbox" name="triceps" />
+                    <label for="triceps-s3" class="set-label">3</label>
+                    <input id="triceps-s4" class="set-input" type="checkbox" name="triceps" />
+                    <label for="triceps-s4" class="set-label">4</label>
+                    <input id="triceps-s5" class="set-input" type="checkbox" name="triceps" />
+                    <label for="triceps-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- TRÍCEPS TESTA COM 2 HALTERES -->
+              <article class="tile">
+                <header class="ex-title">TRÍCEPS TESTA COM 2 HALTERES</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x12</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 12 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/nR6sPpg0wRU?si=KcXM1B_yKKpIMHl4" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Tríceps Testa com 2 Halteres">
+                  <div class="sets">
+                    <input id="testa-s1" class="set-input" type="checkbox" name="testa" />
+                    <label for="testa-s1" class="set-label">1</label>
+                    <input id="testa-s2" class="set-input" type="checkbox" name="testa" />
+                    <label for="testa-s2" class="set-label">2</label>
+                    <input id="testa-s3" class="set-input" type="checkbox" name="testa" />
+                    <label for="testa-s3" class="set-label">3</label>
+                    <input id="testa-s4" class="set-input" type="checkbox" name="testa" />
+                    <label for="testa-s4" class="set-label">4</label>
+                    <input id="testa-s5" class="set-input" type="checkbox" name="testa" />
+                    <label for="testa-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- ABDOMINAL SUPRA CURTO -->
+              <article class="tile">
+                <header class="ex-title">ABDOMINAL SUPRA CURTO</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x30</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Manter o abdomen contraído</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/WIwTarXu6Yk?si=7pWuREX5SUtTQh0Z" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Abdominal Supra Curto">
+                  <div class="sets">
+                    <input id="abs-s1" class="set-input" type="checkbox" name="abs" />
+                    <label for="abs-s1" class="set-label">1</label>
+                    <input id="abs-s2" class="set-input" type="checkbox" name="abs" />
+                    <label for="abs-s2" class="set-label">2</label>
+                    <input id="abs-s3" class="set-input" type="checkbox" name="abs" />
+                    <label for="abs-s3" class="set-label">3</label>
+                    <input id="abs-s4" class="set-input" type="checkbox" name="abs" />
+                    <label for="abs-s4" class="set-label">4</label>
+                    <input id="abs-s5" class="set-input" type="checkbox" name="abs" />
+                    <label for="abs-s5" class="set-label">5</label>
+                    <input id="abs-s6" class="set-input" type="checkbox" name="abs" />
+                    <label for="abs-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+            </div>
+          </section>
+
+          <section id="panelB" aria-label="Treino B - Ombros">
+            <h2 class="section-title">Ênfase em deltóides e parte inferior posterior</h2>
+            <div class="tiles">
+              <!-- ELEVAÇÃO LATERAL -->
+              <article class="tile">
+                <header class="ex-title">ELEVAÇÃO LATERAL</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 2x15 + 3x8</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Ajustar a carga de acordo com a quantidade de movimentos exigidos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/7r0zGcnb1oI?si=C1A2H_pxN-lgF77K" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Elevação Lateral">
+                  <div class="sets">
+                    <input id="lateral-s1" class="set-input" type="checkbox" name="lateral" />
+                    <label for="lateral-s1" class="set-label">1</label>
+                    <input id="lateral-s2" class="set-input" type="checkbox" name="lateral" />
+                    <label for="lateral-s2" class="set-label">2</label>
+                    <input id="lateral-s3" class="set-input" type="checkbox" name="lateral" />
+                    <label for="lateral-s3" class="set-label">3</label>
+                    <input id="lateral-s4" class="set-input" type="checkbox" name="lateral" />
+                    <label for="lateral-s4" class="set-label">4</label>
+                    <input id="lateral-s5" class="set-input" type="checkbox" name="lateral" />
+                    <label for="lateral-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- ELEVAÇÃO FRONTAL PEGADA PRONADA -->
+              <article class="tile">
+                <header class="ex-title">ELEVAÇÃO FRONTAL PEGADA PRONADA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 2x15 + 3x8</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Ajustar a carga de acordo com a quantidade de movimentos exigidos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/owmd9zhkPco?si=8TuOemGEuh265RdA" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Elevação Frontal">
+                  <div class="sets">
+                    <input id="frontal-s1" class="set-input" type="checkbox" name="frontal" />
+                    <label for="frontal-s1" class="set-label">1</label>
+                    <input id="frontal-s2" class="set-input" type="checkbox" name="frontal" />
+                    <label for="frontal-s2" class="set-label">2</label>
+                    <input id="frontal-s3" class="set-input" type="checkbox" name="frontal" />
+                    <label for="frontal-s3" class="set-label">3</label>
+                    <input id="frontal-s4" class="set-input" type="checkbox" name="frontal" />
+                    <label for="frontal-s4" class="set-label">4</label>
+                    <input id="frontal-s5" class="set-input" type="checkbox" name="frontal" />
+                    <label for="frontal-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- DESENVOLVIMENTO COM HALTERES -->
+              <article class="tile">
+                <header class="ex-title">DESENVOLVIMENTO COM HALTERES</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x10</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 10 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/WjIEqeynQQU?si=LKU6hA0ZnKQrtc7h" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Desenvolvimento com Halteres">
+                  <div class="sets">
+                    <input id="desenv-s1" class="set-input" type="checkbox" name="desenv" />
+                    <label for="desenv-s1" class="set-label">1</label>
+                    <input id="desenv-s2" class="set-input" type="checkbox" name="desenv" />
+                    <label for="desenv-s2" class="set-label">2</label>
+                    <input id="desenv-s3" class="set-input" type="checkbox" name="desenv" />
+                    <label for="desenv-s3" class="set-label">3</label>
+                    <input id="desenv-s4" class="set-input" type="checkbox" name="desenv" />
+                    <label for="desenv-s4" class="set-label">4</label>
+                    <input id="desenv-s5" class="set-input" type="checkbox" name="desenv" />
+                    <label for="desenv-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- CADEIRA ABDUTORA TRADICIONAL -->
+              <article class="tile">
+                <header class="ex-title">CADEIRA ABDUTORA TRADICIONAL</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x15</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 15 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/MW7O01AnYu8?si=8SYbJvn7Djy7tcpT" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Cadeira Abdutora">
+                  <div class="sets">
+                    <input id="abdutora-s1" class="set-input" type="checkbox" name="abdutora" />
+                    <label for="abdutora-s1" class="set-label">1</label>
+                    <input id="abdutora-s2" class="set-input" type="checkbox" name="abdutora" />
+                    <label for="abdutora-s2" class="set-label">2</label>
+                    <input id="abdutora-s3" class="set-input" type="checkbox" name="abdutora" />
+                    <label for="abdutora-s3" class="set-label">3</label>
+                    <input id="abdutora-s4" class="set-input" type="checkbox" name="abdutora" />
+                    <label for="abdutora-s4" class="set-label">4</label>
+                    <input id="abdutora-s5" class="set-input" type="checkbox" name="abdutora" />
+                    <label for="abdutora-s5" class="set-label">5</label>
+                    <input id="abdutora-s6" class="set-input" type="checkbox" name="abdutora" />
+                    <label for="abdutora-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- CADEIRA FLEXORA -->
+              <article class="tile">
+                <header class="ex-title">CADEIRA FLEXORA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x12</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 12 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/a2TYK_mTW-I?si=JkWrC0NdMbkbIEWF" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Cadeira Flexora">
+                  <div class="sets">
+                    <input id="flexora-s1" class="set-input" type="checkbox" name="flexora" />
+                    <label for="flexora-s1" class="set-label">1</label>
+                    <input id="flexora-s2" class="set-input" type="checkbox" name="flexora" />
+                    <label for="flexora-s2" class="set-label">2</label>
+                    <input id="flexora-s3" class="set-input" type="checkbox" name="flexora" />
+                    <label for="flexora-s3" class="set-label">3</label>
+                    <input id="flexora-s4" class="set-input" type="checkbox" name="flexora" />
+                    <label for="flexora-s4" class="set-label">4</label>
+                    <input id="flexora-s5" class="set-input" type="checkbox" name="flexora" />
+                    <label for="flexora-s5" class="set-label">5</label>
+                    <input id="flexora-s6" class="set-input" type="checkbox" name="flexora" />
+                    <label for="flexora-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- PANTURRILHA NA MÁQUINA -->
+              <article class="tile">
+                <header class="ex-title">PANTURRILHA NA MÁQUINA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x15</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 15 movimentos</p>
+                <form class="exercicio" aria-label="Panturrilha na Máquina">
+                  <div class="sets">
+                    <input id="pant-s1" class="set-input" type="checkbox" name="pant" />
+                    <label for="pant-s1" class="set-label">1</label>
+                    <input id="pant-s2" class="set-input" type="checkbox" name="pant" />
+                    <label for="pant-s2" class="set-label">2</label>
+                    <input id="pant-s3" class="set-input" type="checkbox" name="pant" />
+                    <label for="pant-s3" class="set-label">3</label>
+                    <input id="pant-s4" class="set-input" type="checkbox" name="pant" />
+                    <label for="pant-s4" class="set-label">4</label>
+                    <input id="pant-s5" class="set-input" type="checkbox" name="pant" />
+                    <label for="pant-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+            </div>
+          </section>
+
+          <section id="panelC" aria-label="Treino C - Peito">
+            <h2 class="section-title">Supino, flexão, bíceps</h2>
+            <div class="tiles">
+              <!-- Treino C: conteúdo importado do treinoC_series.html -->
+
+              <!-- SUPINO 5x12 -->
+              <article class="tile">
+                <header class="ex-title">SUPINO 45° COM HALTERES</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x12</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Mantenha a postura estável, controle na fase excêntrica.</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/fq_HfbTjL2Q?si=Aq3nIYB7dos4QNOU" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Supino 45 graus com halteres">
+                  <div class="sets" aria-hidden="false">
+                    <input id="supino-s1" class="set-input" type="checkbox" name="supino" />
+                    <label for="supino-s1" class="set-label">1</label>
+
+                    <input id="supino-s2" class="set-input" type="checkbox" name="supino" />
+                    <label for="supino-s2" class="set-label">2</label>
+
+                    <input id="supino-s3" class="set-input" type="checkbox" name="supino" />
+                    <label for="supino-s3" class="set-label">3</label>
+
+                    <input id="supino-s4" class="set-input" type="checkbox" name="supino" />
+                    <label for="supino-s4" class="set-label">4</label>
+
+                    <input id="supino-s5" class="set-input" type="checkbox" name="supino" />
+                    <label for="supino-s5" class="set-label">5</label>
+                  </div>
+
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- FLEXÃO 5xFALHA -->
+              <article class="tile">
+                <header class="ex-title">FLEXÃO</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5xFALHA</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/XZIejzKdAjo?si=HCCxHsEro2l_yYYI" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Flexão">
+                  <div class="sets" style="margin-top:14px">
+                    <input id="flex-s1" class="set-input" type="checkbox" name="flex" />
+                    <label for="flex-s1" class="set-label">1</label>
+
+                    <input id="flex-s2" class="set-input" type="checkbox" name="flex" />
+                    <label for="flex-s2" class="set-label">2</label>
+
+                    <input id="flex-s3" class="set-input" type="checkbox" name="flex" />
+                    <label for="flex-s3" class="set-label">3</label>
+
+                    <input id="flex-s4" class="set-input" type="checkbox" name="flex" />
+                    <label for="flex-s4" class="set-label">4</label>
+
+                    <input id="flex-s5" class="set-input" type="checkbox" name="flex" />
+                    <label for="flex-s5" class="set-label">5</label>
+                  </div>
+
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- ROSCA DIRETA 5x10 -->
+              <article class="tile">
+                <header class="ex-title">ROSCA DIRETA NO CROSS</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x10</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/Ksk2Khk7iEw?si=zoDukYCOhqrQx0Ux" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Rosca Direta no Cross">
+                  <div class="sets" style="margin-top:14px">
+                    <input id="rd-s1" class="set-input" type="checkbox" name="rosca" />
+                    <label for="rd-s1" class="set-label">1</label>
+
+                    <input id="rd-s2" class="set-input" type="checkbox" name="rosca" />
+                    <label for="rd-s2" class="set-label">2</label>
+
+                    <input id="rd-s3" class="set-input" type="checkbox" name="rosca" />
+                    <label for="rd-s3" class="set-label">3</label>
+
+                    <input id="rd-s4" class="set-input" type="checkbox" name="rosca" />
+                    <label for="rd-s4" class="set-label">4</label>
+
+                    <input id="rd-s5" class="set-input" type="checkbox" name="rosca" />
+                    <label for="rd-s5" class="set-label">5</label>
+                  </div>
+
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- ROSCA MARTELO 5x10 -->
+              <article class="tile">
+                <header class="ex-title">ROSCA MARTELO</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x10</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/vPZe359uMH0?si=vxHmSUnfnwtbSfGu" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Rosca Martelo">
+                  <div class="sets" style="margin-top:14px">
+                    <input id="rm-s1" class="set-input" type="checkbox" name="marte" />
+                    <label for="rm-s1" class="set-label">1</label>
+
+                    <input id="rm-s2" class="set-input" type="checkbox" name="marte" />
+                    <label for="rm-s2" class="set-label">2</label>
+
+                    <input id="rm-s3" class="set-input" type="checkbox" name="marte" />
+                    <label for="rm-s3" class="set-label">3</label>
+
+                    <input id="rm-s4" class="set-input" type="checkbox" name="marte" />
+                    <label for="rm-s4" class="set-label">4</label>
+
+                    <input id="rm-s5" class="set-input" type="checkbox" name="marte" />
+                    <label for="rm-s5" class="set-label">5</label>
+                  </div>
+
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- ABDOMINAL 6x30 -->
+              <article class="tile">
+                <header class="ex-title">ABDOMINAL SUPRA CURTO</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x30</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/WIwTarXu6Yk?si=4zVFH-g9nGXopFkJ" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Abdominal Supra Curto">
+                  <div class="sets" style="margin-top:14px">
+                    <input id="ab-s1" class="set-input" type="checkbox" name="abdo" />
+                    <label for="ab-s1" class="set-label">1</label>
+
+                    <input id="ab-s2" class="set-input" type="checkbox" name="abdo" />
+                    <label for="ab-s2" class="set-label">2</label>
+
+                    <input id="ab-s3" class="set-input" type="checkbox" name="abdo" />
+                    <label for="ab-s3" class="set-label">3</label>
+
+                    <input id="ab-s4" class="set-input" type="checkbox" name="abdo" />
+                    <label for="ab-s4" class="set-label">4</label>
+
+                    <input id="ab-s5" class="set-input" type="checkbox" name="abdo" />
+                    <label for="ab-s5" class="set-label">5</label>
+
+                    <input id="ab-s6" class="set-input" type="checkbox" name="abdo" />
+                    <label for="ab-s6" class="set-label">6</label>
+                  </div>
+
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+            </div>
+          </section>
+
+          <section id="panelD" aria-label="Treino D - Pernas">
+            <h2 class="section-title">Ênfase em inferiores e core</h2>
+            <div class="tiles">
+              <!-- AGACHAMENTO PESO CORPORAL -->
+              <article class="tile">
+                <header class="ex-title">AGACHAMENTO PESO CORPORAL</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 1x150</div>
+                  <div><strong>Descanso:</strong> 30" a cada falha</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/YECXftS7Hyc?si=rh004wPQEBuodeLB" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Agachamento Peso Corporal">
+                  <div class="sets">
+                    <input id="agach-s1" class="set-input" type="checkbox" name="agach" />
+                    <label for="agach-s1" class="set-label">1</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">1</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- AFUNDO -->
+              <article class="tile">
+                <header class="ex-title">AFUNDO</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 5x10</div>
+                  <div><strong>Descanso:</strong> 1'</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/WyWnS79bFRI?si=6M5brbTPE0TK7d28" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Afundo">
+                  <div class="sets">
+                    <input id="afundo-s1" class="set-input" type="checkbox" name="afundo" />
+                    <label for="afundo-s1" class="set-label">1</label>
+                    <input id="afundo-s2" class="set-input" type="checkbox" name="afundo" />
+                    <label for="afundo-s2" class="set-label">2</label>
+                    <input id="afundo-s3" class="set-input" type="checkbox" name="afundo" />
+                    <label for="afundo-s3" class="set-label">3</label>
+                    <input id="afundo-s4" class="set-input" type="checkbox" name="afundo" />
+                    <label for="afundo-s4" class="set-label">4</label>
+                    <input id="afundo-s5" class="set-input" type="checkbox" name="afundo" />
+                    <label for="afundo-s5" class="set-label">5</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">5</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- CADEIRA EXTENSORA -->
+              <article class="tile">
+                <header class="ex-title">CADEIRA EXTENSORA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x12</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <p class="obs">Usar uma carga ideal para falhar perto de 12 movimentos</p>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/AIrlZ9s520w?si=u8ChmVhpKyr_ZyEu" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Cadeira Extensora">
+                  <div class="sets">
+                    <input id="extensora-s1" class="set-input" type="checkbox" name="extensora" />
+                    <label for="extensora-s1" class="set-label">1</label>
+                    <input id="extensora-s2" class="set-input" type="checkbox" name="extensora" />
+                    <label for="extensora-s2" class="set-label">2</label>
+                    <input id="extensora-s3" class="set-input" type="checkbox" name="extensora" />
+                    <label for="extensora-s3" class="set-label">3</label>
+                    <input id="extensora-s4" class="set-input" type="checkbox" name="extensora" />
+                    <label for="extensora-s4" class="set-label">4</label>
+                    <input id="extensora-s5" class="set-input" type="checkbox" name="extensora" />
+                    <label for="extensora-s5" class="set-label">5</label>
+                    <input id="extensora-s6" class="set-input" type="checkbox" name="extensora" />
+                    <label for="extensora-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- PRANCHA ISOMÉTRICA -->
+              <article class="tile">
+                <header class="ex-title">PRANCHA ISOMÉTRICA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 6x1'</div>
+                  <div><strong>Descanso:</strong> 1'30"</div>
+                </div>
+                <div class="actions">
+                  <a class="video-link" href="https://youtube.com/shorts/ITXwX9bqWVg?si=Ra3rfBUc23EugFIg" target="_blank" rel="noopener">Assistir vídeo</a>
+                </div>
+                <form class="exercicio" aria-label="Prancha Isométrica">
+                  <div class="sets">
+                    <input id="prancha-s1" class="set-input" type="checkbox" name="prancha" />
+                    <label for="prancha-s1" class="set-label">1</label>
+                    <input id="prancha-s2" class="set-input" type="checkbox" name="prancha" />
+                    <label for="prancha-s2" class="set-label">2</label>
+                    <input id="prancha-s3" class="set-input" type="checkbox" name="prancha" />
+                    <label for="prancha-s3" class="set-label">3</label>
+                    <input id="prancha-s4" class="set-input" type="checkbox" name="prancha" />
+                    <label for="prancha-s4" class="set-label">4</label>
+                    <input id="prancha-s5" class="set-input" type="checkbox" name="prancha" />
+                    <label for="prancha-s5" class="set-label">5</label>
+                    <input id="prancha-s6" class="set-input" type="checkbox" name="prancha" />
+                    <label for="prancha-s6" class="set-label">6</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar Séries</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">6</span></div>
+                  </div>
+                </form>
+              </article>
+
+              <!-- ESCADA -->
+              <article class="tile">
+                <header class="ex-title">ESCADA</header>
+                <div class="meta">
+                  <div><strong>Séries/Reps:</strong> 15' a 20'</div>
+                  <div><strong>Descanso:</strong> -</div>
+                </div>
+                <form class="exercicio" aria-label="Escada">
+                  <div class="sets">
+                    <input id="escada-s1" class="set-input" type="checkbox" name="escada" />
+                    <label for="escada-s1" class="set-label">✓</label>
+                  </div>
+                  <div class="controls">
+                    <button type="reset" class="btn">Resetar</button>
+                    <div class="progress" aria-hidden="true"><span class="pill">0</span> / <span class="total">1</span></div>
+                  </div>
+                </form>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Zune Training — Inspirado no Windows Phone 8.1
+    </footer>
+  </div>
+
+  <script type="module" src="/js/main.js" defer></script>
+</body>
+</html>
