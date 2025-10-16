@@ -1,0 +1,107 @@
+/* Zune Treinos — Metro-inspired styles (externalized) */
+:root{
+  --accent:#0078D7;
+  --bg:#000000; /* OLED true black */
+  --tile:#111111;
+  --text:#f2f2f2;
+  --muted:#bdbdbd;
+  --border:#1f1f1f;
+  --focus:#25a0ff;
+  --success:#00b294;
+  --tile-radius:6px;
+  --tile-gap:12px;
+  --tile-pad:14px;
+  --font:"Segoe UI", Roboto, -apple-system, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --h1:28px;
+  --h2:22px;
+  --h3:18px;
+  --body:16px;
+  --tap:44px;
+  --maxw:960px;
+}
+
+.light{
+  --bg:#ffffff;
+  --tile:#f4f4f4;
+  --text:#0f0f0f;
+  --muted:#555555;
+  --border:#dddddd;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.app{min-height:100dvh;display:grid;grid-template-rows:auto 1fr auto}
+header.appbar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--bg);border-bottom:1px solid var(--border)}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand-title{font-size:var(--h1);font-weight:700}
+.brand-sub{font-size:var(--h3);color:var(--muted);font-weight:600}
+
+.theme-switch{display:inline-flex;align-items:center;gap:10px;font-size:var(--body)}
+.toggle{appearance:none;width:56px;height:32px;border-radius:32px;border:2px solid var(--border);position:relative;background:var(--tile);cursor:pointer}
+.toggle::after{content:"";width:24px;height:24px;border-radius:50%;background:var(--accent);position:absolute;top:50%;left:4px;transform:translateY(-50%);transition:left 180ms}
+.toggle:checked::after{left:28px}
+
+main{width:100%;max-width:var(--maxw);margin:0 auto;padding:10px 12px 24px}
+
+.pivots{margin-top:6px}
+.pivot-input{position:absolute;opacity:0;pointer-events:none}
+.pivot-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:12px}
+.pivot-tab{display:inline-flex;align-items:center;justify-content:center;height:var(--tap);font-size:var(--h3);font-weight:700;background:var(--tile);color:var(--text);border:1px solid var(--border);cursor:pointer}
+.pivot-tab:hover{border-color:var(--accent)}
+#tabA:checked ~ .pivot-tabs label[for="tabA"],#tabB:checked ~ .pivot-tabs label[for="tabB"],#tabC:checked ~ .pivot-tabs label[for="tabC"],#tabD:checked ~ .pivot-tabs label[for="tabD"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.pivot-panels > section{display:none}
+#tabA:checked ~ .pivot-panels #panelA,#tabB:checked ~ .pivot-panels #panelB,#tabC:checked ~ .pivot-panels #panelC,#tabD:checked ~ .pivot-panels #panelD{display:block}
+
+.section-title{
+  font-size:var(--body);
+  color:var(--muted);
+  margin:0 0 var(--tile-gap);
+  font-weight:600;
+  letter-spacing:0.2px;
+}
+
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--tile-gap)}
+@media (max-width:680px){.tiles{grid-template-columns:1fr}}
+.tile{background:var(--tile);border:1px solid var(--border);border-radius:var(--tile-radius);padding:var(--tile-pad);display:grid;gap:12px}
+.ex-title{font-size:var(--h2);font-weight:800;text-transform:uppercase;line-height:1.25}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:var(--body)}
+@media (max-width:480px){.meta{grid-template-columns:1fr}}
+.meta-item{display:grid;gap:4px;border:1px dashed var(--border);border-radius:4px;padding:8px}
+.label{color:var(--muted);font-weight:600;font-size:14px;text-transform:uppercase}
+.value{font-weight:700}
+.obs{font-size:var(--body);color:var(--muted);border-left:4px solid var(--accent);padding-left:8px}
+
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:var(--tap);padding:0 16px;font-size:var(--body);font-weight:800;text-transform:uppercase;border:2px solid var(--accent);color:#fff;background:var(--accent);border-radius:4px;cursor:pointer}
+.btn.secondary{background:transparent;color:var(--accent);border-color:var(--accent)}
+.video-link{display:inline-block;margin-top:8px;color:var(--accent);text-decoration:none;font-weight:600}
+
+.series{display:grid;grid-template-columns:repeat(auto-fit,minmax(64px,1fr));gap:8px;margin-top:14px}
+.set-input{position:absolute;opacity:0;pointer-events:none}
+.set-label{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:var(--tap);border:2px solid var(--border);border-radius:6px;background:transparent;font-weight:800;font-size:16px;letter-spacing:0.5px;color:var(--text);cursor:pointer}
+.set-input:checked + .set-label{border-color:var(--success);background:rgba(0,178,148,0.18);color:var(--success)}
+
+.progress{display:inline-flex;align-items:baseline;gap:8px;font-size:var(--body)}
+.progress .pill{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:2px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+
+footer{border-top:1px solid var(--border);padding:16px;text-align:center;color:var(--muted);font-size:14px}
+
+/* Accessibility focus */
+.pivot-tab:focus-visible,.set-label:focus-visible,.btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+
+/* small utility */
+.controls{display:flex;gap:10px;align-items:center;justify-content:flex-end}
+
+/* Make labels touch friendly */
+.set-label{padding:0 8px}
+
+/* Ensure body class toggling works with theme control via JS */
+body.light{transition:background .18s,color .18s}
